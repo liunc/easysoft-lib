@@ -1,4 +1,4 @@
-package com.easysoft.lib.jdb.domain.service.dto;
+package com.easysoft.lib.jdb.domain.dto;
 
 import java.util.List;
 
