@@ -4,8 +4,6 @@ import java.util.Date;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
-import com.easysoft.lib.jdb.domain.entity.BaseEntity;
-
 public class DetailResponse {
 
 	private String id;
@@ -63,7 +61,7 @@ public class DetailResponse {
 	public DetailResponse() {
 	}
 
-	private DetailResponse(String id, String creater, Date createTime, String updater, Date updateTime) {
+	public DetailResponse(String id, String creater, Date createTime, String updater, Date updateTime) {
 		this.id = id;
 		this.creater = creater;
 		this.createTime = createTime;
@@ -71,7 +69,4 @@ public class DetailResponse {
 		this.updateTime = updateTime;
 	}
 
-	public <T extends BaseEntity> DetailResponse(T entity) {
-		this(entity.getId(), entity.getCreater(), entity.getCreateTime(), entity.getUpdater(), entity.getUpdateTime());
-	}
 }
