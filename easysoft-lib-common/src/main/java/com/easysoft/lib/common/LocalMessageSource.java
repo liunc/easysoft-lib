@@ -1,4 +1,4 @@
-package org.easysoft.lib.common;
+package com.easysoft.lib.common;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;

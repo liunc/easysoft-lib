@@ -20,8 +20,8 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-		
-		<!--QueryDSL支持-->
+
+		<!--QueryDSL支持 -->
 		<dependency>
 			<groupId>com.querydsl</groupId>
 			<artifactId>querydsl-apt</artifactId>
@@ -31,7 +31,7 @@
 			<groupId>com.querydsl</groupId>
 			<artifactId>querydsl-jpa</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.easysoft.lib</groupId>
 			<artifactId>easysoft-lib-common</artifactId>

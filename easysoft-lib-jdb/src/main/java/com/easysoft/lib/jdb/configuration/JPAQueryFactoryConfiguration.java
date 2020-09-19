@@ -11,8 +11,8 @@ import com.querydsl.jpa.impl.JPAQueryFactory;
 public class JPAQueryFactoryConfiguration {
 
 	@Bean
-    public JPAQueryFactory jpaQueryFactory(EntityManager entityManager){
-        return new JPAQueryFactory(entityManager);
-    }
+	public JPAQueryFactory jpaQueryFactory(EntityManager entityManager) {
+		return new JPAQueryFactory(entityManager);
+	}
 
 }

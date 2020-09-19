@@ -1,4 +1,4 @@
-package org.easysoft.lib.common.exception;
+package com.easysoft.lib.common.exception;
 
 public class BadRequestException extends BusinessException {
 
