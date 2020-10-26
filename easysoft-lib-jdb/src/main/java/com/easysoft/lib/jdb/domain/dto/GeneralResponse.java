@@ -16,27 +16,31 @@ public class GeneralResponse {
 
 	private String path;
 
+	private String method;
+
 	private Object data;
 
-	public GeneralResponse() {
+	public GeneralResponse() {                         
 		this.timestamp = new Date().getTime();
 	}
 
-	public void success(int code, String text, String path, Object data) {
+	public void success(int code, String text, String path, String method, Object data) {
 		this.success = true;
 		this.code = code;
 		this.text = text;
 		this.message = "";
 		this.path = path;
+		this.method = method;
 		this.data = data;
 	}
 	
-	public void fail(int code, String text, String message, String path) {
+	public void fail(int code, String text, String message, String path, String method) {
 		this.success = false;
 		this.code = code;
 		this.text = text;
 		this.message = message;
 		this.path = path;
+		this.method = method;
 	}
 
 	public long getTimestamp() {
@@ -85,6 +89,14 @@ public class GeneralResponse {
 
 	public void setPath(String path) {
 		this.path = path;
+	}
+
+	public String getMethod() {
+		return method;
+	}
+
+	public void setMethod(String method) {
+		this.method = method;
 	}
 
 	public Object getData() {

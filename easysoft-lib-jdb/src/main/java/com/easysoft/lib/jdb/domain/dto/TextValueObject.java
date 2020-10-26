@@ -6,6 +6,15 @@ public class TextValueObject {
 	
 	private String value;
 
+	public TextValueObject(){
+
+	}
+
+	public TextValueObject(String text, String value){
+		this.text = text;
+		this.value = value;
+	}
+
 	public String getText() {
 		return text;
 	}
