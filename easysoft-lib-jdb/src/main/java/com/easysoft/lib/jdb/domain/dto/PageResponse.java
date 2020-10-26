@@ -6,23 +6,23 @@ public class PageResponse<T> {
 
 	private long total;
 
-	private List<T> results;
+	private List<T> rows;
 
 	public PageResponse() {
 
 	}
 
-	public PageResponse(long total, List<T> results) {
+	public PageResponse(long total, List<T> rows) {
 		this.total = total;
-		this.results = results;
+		this.rows = rows;
 	}
 
 	public long getTotal() {
 		return total;
 	}
 
-	public List<T> getResults() {
-		return results;
+	public List<T> getRows() {
+		return rows;
 	}
 
 }
